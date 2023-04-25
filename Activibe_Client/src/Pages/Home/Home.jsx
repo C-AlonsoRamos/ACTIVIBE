@@ -51,16 +51,6 @@ const Home = () => {
     });
   };
 
-  // const typesCarousel = [
-  //   [activities, 'Top 10 →'],
-  //   [naturaleza, 'Para los amantes de la Naturaleza → '],
-  //   [deportes, 'Para los más Deportistas → '],
-  //   [adrenalina, 'Para los más Atrevidos → '],
-  //   [juegos, 'Para los amantes de los Juegos de Mesa → '],
-  //   [exoticos, 'Para los más Exóticos →'],
-  //   [otros, 'Otras Actividades... → '],
-  // ];
-
   useEffect(() => {
     getAllActivities();
     getTop10();
@@ -73,11 +63,6 @@ const Home = () => {
     <main className="ocio-home">
       {loaded ? (
         <div className="ocio-container-home">
-          {/* {typesCarousel.map((type) => {
-            console.log(type[1]);
-            <Carousel prop={type[0]} title={type[1]} />;
-          })} */}
-
           <div
             className="hero-home"
             style={{ backgroundImage: `url(${filter[0].img})`, backgroundSize: `cover` }}

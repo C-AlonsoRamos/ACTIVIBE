@@ -28,7 +28,6 @@ const Sections = () => {
   };
 
   const chooseFavorite = (value, activity) => {
-    console.log(activity.favorites.includes(id));
     const info = {
       id: id,
     };
@@ -131,11 +130,3 @@ const Sections = () => {
 };
 
 export default Sections;
-{
-  /* <div onClick={handleClick}>
-{isFavorite ? (
-  <i className="fas fa-heart"></i>
-) : (
-  <i className="far fa-heart"></i>
-)} */
-}
